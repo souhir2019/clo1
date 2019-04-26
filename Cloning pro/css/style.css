@@ -1,0 +1,410 @@
+body {
+	background-color: #ffffff;
+}
+
+.bag{font-family: "lato";
+font-size: 18px;
+	color: #171001;
+	display: none; 
+}
+
+.wimg{
+	cursor: pointer;
+	
+	transition: all 2s;
+ 
+}
+
+.wimg:hover{
+	cursor: pointer;
+	
+  transform: rotateY(180deg);
+  top: 0; right: 0; bottom: 0; left: 0;
+
+
+ 
+}
+
+.bag a{
+	color: #06D6A0;
+}
+.bag h3{
+	font-size: 28px;
+
+}
+.waifu{
+	cursor: pointer;
+}
+
+.video-background {
+  background: #000;
+  position: relative;
+  top: 0; right: 0; bottom: 0; left: 0;
+
+}
+.video-foreground,
+.video-background iframe {
+  top: 100%;
+  left: 100%;
+  width: 100%;
+  height: 690px;
+  pointer-events: none;
+}
+
+.cards {
+  background-color: #2976a47d;
+  color: #000000;
+  font-family: cursive;
+  width: 210px;
+  cursor: pointer;
+text-align: center;
+margin-left: 115px;
+}
+
+#blank1 {
+	padding: 10px;
+}
+
+h2 {
+	font-family: "lato";
+	font-kerning: 120px;
+	color: #89a212;
+	text-align: center;
+  letter-spacing: 1px;
+  margin-top: 50px;
+  margin-bottom: -20px;
+  font-size: 50px;
+}
+h1 {
+  text-align: center;
+ color: #6d6d6b;
+ font-size: 35px;
+}
+@keyframes subcrds {
+    0%   {bottom:200px;}
+    100% {bottom:0px;}
+}
+
+.subcards {
+	font-family: "lato";
+	width: 80%;
+	color:#000000;
+	text-align: center;
+	display: none;
+	position: relative;
+	animation-name: subcrds;
+	animation-duration: 0.5s;
+  overflow-wrap: break-word;
+  background-color: #96bcd2;
+  left: 89px;
+  height: 260px;
+  padding: 15px;
+}
+
+.show{
+	display: block;
+
+}
+@keyframes sgba {
+    0%   {right:1250px; top:0px;opacity: 0.1;}
+    100% {right:0px; top:0px; opacity: 100;}
+}
+
+.sgb{
+	font-family: "lato";
+	background-color:rgb(68, 179, 41);
+	color: #FFD166;
+	height: 200px;
+	width: 700px;
+	padding-top: 45px;
+	margin-bottom: 30px;
+	font-size: 20px;
+	position: relative;
+	display: none;
+	border-style: solid;
+	font-family: "Roboto Light";
+	font-size: 20px; 
+	transition-duration: 1.5s;
+}
+
+.sgb1 {
+	animation-name: sgba;
+	animation-duration: 3s;
+  animation-timing-function: ease;
+  
+}
+
+.sgb2 {
+	animation-name: sgba;
+	animation-duration: 3.5s;
+  animation-timing-function: ease;
+
+}
+
+.sgb3 {
+	animation-name: sgba;
+	animation-duration: 4s;
+  animation-timing-function: ease;
+
+}
+.img-fluid{
+  height: 350px;
+	width: 350px;
+  padding-left: 100px;}
+
+.wimg{
+  height: 300px;
+  width: 300px;
+  margin: 50px 0px 50px 50px; 
+}
+.pack
+{
+  height: 300px;
+  width: 300px;
+  margin: 50px 0px 50px 50px; 
+}
+#footer{
+	background-color: #118AB2;
+	padding-bottom: 60px;
+	padding-top: 40px;
+	border-top-style: solid;
+	border-top-color: #FFD166;
+	border-top-width: 4px;
+
+}
+#empty{
+  background-color: none;
+  padding-top: 50px;
+  padding-right: 300px;
+  padding-left: 300px;
+  }
+  
+strong{
+	font-weight: 900;
+}
+
+.sliding-link{
+	border-radius: 50%;
+
+}
+
+#contactForm {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'name'
+    'email'
+    'company'
+    'phone'
+    'message';
+}
+
+.required-field {
+  grid-column: 1 / 2;
+}
+
+.submit-button {
+  grid-column: 2 / 3;
+}
+
+.name-field {
+  grid-area: name;
+  grid-column: 1 / 3;
+}
+
+.email-field {
+  grid-area: email;
+  grid-column: 1 / 3;
+}
+
+.company-field {
+  grid-area: company;
+  grid-column: 1 / 3;
+}
+
+.phone-field {
+  grid-area: phone;
+  grid-column: 1 / 3;
+}
+
+.message-field {
+  grid-area: message;
+  grid-column: 1 / 3;
+}
+
+/* FORM STYLES */
+
+.contact-us {
+  margin: 0 0 30px;
+  font-family: cursive;
+  font-weight: 900;
+  font-size:20px;
+  color: #5dc3f2;
+}
+
+.contact form {
+  border: 0;
+}
+
+.contact form label {
+  display: block;
+}
+
+.contact form p {
+  margin: 0;
+  font-family: cursive;
+  font-weight: 200;
+  font-size: 12px;
+  color: rgba(74, 86, 96, 1);
+}
+
+.contact form input, .contact form textarea {
+  font-family: 'Mukta Mahee', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  width: 100%;
+  padding: .4em .8em;
+  background: rgba(249, 250, 250, .5);
+  border: 1px solid#96bcd2;
+  border-radius: 2.5px;
+  outline-color: #5dc3f2;
+}
+
+.contact form button {
+  font-family: 'Mukta Mahee', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+  background: #5dc3f2;
+  width: 90px;
+  height: 30px;
+  border: 0;
+  border-radius: 15px;
+}
+
+.submit-button {
+  align-self: center;
+  justify-self: end;
+}
+
+.submit-button:hover{
+    background-color: #fff;
+}
+
+.contact form button:hover, .contact form button:focus {
+  background:#96bcd2;
+  color: #fff;
+  outline: 0;
+  transition: background-color 0.3s ease-out;
+}
+
+.required-field {
+  font-family: 'Mukta Mahee', sans-serif;
+  font-weight: 200;
+  font-size: 10px;
+  color: rgba(74, 86, 96, 0.75);
+  align-self: center;
+  justify-self: start;
+}
+
+span {
+  color: #5dc3f2;
+}
+
+.alert {
+  margin-bottom: 1em;
+  padding: 10px;
+  background: #49b0e7;
+  font-family: 'Mukta Mahee', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  border-radius: 2.5px;
+  display: none;
+}
+
+/* LARGE SCREENS */
+
+@media (min-width: 500px) {
+  #contactForm {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'name company'
+      'email phone'
+      'message message';
+  }
+
+  .name-field {
+    grid-area: name;
+    grid-column: 1 / 2;
+  }
+
+  .email-field {
+    grid-area: email;
+    grid-column: 1 / 2;
+  }
+
+  .company-field {
+    grid-area: company;
+    grid-column: 2 / 3;
+  }
+
+  .phone-field {
+    grid-area: phone;
+    grid-column: 2 / 3;
+  }
+
+  .message-field {
+    grid-area: message;
+    grid-column: 1 / 3;
+  }
+}
+.copyright{
+  font-size: 1.5em;
+  width: 100%;
+  height: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.container-fluid div a.sliding-link {
+  color: black;
+}
+nav a {
+  color: rgb(6, 5, 88);
+}
+nav.navbar.navbar-fixed-top.navbar-light{
+  background-color: #ffffff;
+
+}
+.navbar-brand>img {
+  margin-top: -20px;
+  height: 55px;
+}
+nav.navbar.navbar-fixed-top.navbar-light .container-fluid {
+  border-block-end: 3px solid black;
+}
+div#tagd .row {
+  margin-bottom: 20px;
+}
+.col-md-2 {
+display: flex;
+margin-left: 25%
+}
+.col-md-2 a img.maps{
+width:130px;
+height:75px;
+}
+.col-md-2 a{
+ margin-left: 60px;
+  }
+.wrapper.animated.bounceInLeft {
+    border: 3px solid #96bcd2;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+}
+.contact {
+  margin: 50px;
+}
